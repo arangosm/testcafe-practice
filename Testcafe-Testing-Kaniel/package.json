@@ -1,0 +1,25 @@
+{
+  "name": "testcafe-testing-kaniel",
+  "version": "1.0.0",
+  "description": "Automated Testing with Testcafe",
+  "main": "index.js",
+  "scripts": {
+    "test:chrome": "testcafe chrome ./tests",
+    "test:chromeSingleTest": "testcafe chrome tests/*.js --test \"Otro test de title page\"",
+    "test:chrome:headless": "testcafe chrome:headless ./tests",
+    "test:chrome:mobile": "testcafe chrome:emulation:device=iphone X ./tests",
+    "test:safari": "testcafe safari ./tests",
+    "test:firefox": "testcafe firefox ./tests"
+  },
+  "keywords": [
+    "Testcafe",
+    "Testing",
+    "Automation"
+  ],
+  "author": "Sergio Arango",
+  "license": "ISC",
+  "dependencies": {
+    "prettier": "^3.1.0",
+    "testcafe": "^3.4.0"
+  }
+}
